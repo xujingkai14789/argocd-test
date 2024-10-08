@@ -1,0 +1,20 @@
+# myapp-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-gitlab
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: myapp-gitlab
+  template:
+    metadata:
+      labels:
+        app: myapp-gitlab
+    spec:
+      containers:
+      - image: hub.atomgit.com/amd64/nginx
+        name: myapp-gitlab
+        ports:
+        - containerPort: 80

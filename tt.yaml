@@ -14,7 +14,7 @@ spec:
         app: myapp-gitlab
     spec:
       containers:
-      - image: hub.atomgit.com/amd64/nginx
+      - image: hub.atomgit.com/amd64/nginx:1.25.2-perl
         name: myapp-gitlab
         ports:
         - containerPort: 80

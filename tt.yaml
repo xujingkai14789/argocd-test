@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: myapp-gitlab
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: myapp-gitlab
@@ -14,7 +14,7 @@ spec:
         app: myapp-gitlab
     spec:
       containers:
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+      - image: myapp-gitlab-7b99cffb45-5p7mn
         name: myapp-gitlab
         ports:
         - containerPort: 80

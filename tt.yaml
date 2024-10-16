@@ -14,7 +14,7 @@ spec:
         app: myapp-gitlab
     spec:
       containers:
-      - image: hub.atomgit.com/amd64/nginx:1.25.2-perl
+      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         name: myapp-gitlab
         ports:
         - containerPort: 80

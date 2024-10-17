@@ -14,7 +14,7 @@ spec:
         app: myapp-gitlab
     spec:
       containers:
-      - image: myapp-gitlab-7b99cffb45-5p7mn
+      - image: nginx:latest
         name: myapp-gitlab
         ports:
         - containerPort: 80
